@@ -64,8 +64,18 @@ describe('Robot', function(){
         assert.equal(3, robot.y) // Changed
     })
 
-    it('should not fall off the grid', function() {
-        // PENDING - only after we've implemented move
+    it('should report its position', function() {
+        var robot = new sim.Robot()
+
+        robot.place(22,33, sim.Heading.WEST)
+
+        assert.equal("22,33,West", robot.report())
+
+        robot.right()
+        robot.move()
+
+        assert.equal("22,32,North", robot.report())
+
     })
 
   // })

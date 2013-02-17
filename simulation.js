@@ -1,10 +1,10 @@
 // The players in the simulation
 
 var Heading = {
-    NORTH: { dx:  0, dy: -1, right: 'EAST',  left: 'WEST'},
-    EAST:  { dx:  1, dy:  0, right: 'SOUTH', left: 'NORTH'},
-    SOUTH: { dx:  0, dy:  1, right: 'WEST',  left: 'EAST'},
-    WEST:  { dx: -1, dy:  0, right: 'NORTH', left: 'SOUTH'}
+    NORTH: { name: 'North', dx:  0, dy: -1, right: 'EAST',  left: 'WEST'},
+    EAST:  { name: 'East',  dx:  1, dy:  0, right: 'SOUTH', left: 'NORTH'},
+    SOUTH: { name: 'South', dx:  0, dy:  1, right: 'WEST',  left: 'EAST'},
+    WEST:  { name: 'West',  dx: -1, dy:  0, right: 'NORTH', left: 'SOUTH'}
 }
 
 function Robot() {
@@ -31,6 +31,10 @@ function Robot() {
     self.move = function () {
         self.x = self.x + self.heading.dx
         self.y = self.y + self.heading.dy
+    }
+
+    self.report = function() {
+        return [self.x, self.y, self.heading.name].join(',')
     }
 
 }
