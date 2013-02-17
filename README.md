@@ -3,6 +3,8 @@ robot-nodejs
 
 The common variety robot coding test - but in nodejs!
 
+[![Build Status](https://travis-ci.org/pokle/robot-nodejs.png)](https://travis-ci.org/pokle/robot-nodejs)
+
 
 The Objective
 =============
