@@ -53,6 +53,17 @@ describe('Robot', function(){
 
     })
 
+    it('should move one grid unit in the direction it is heading', function() {
+        var robot = new sim.Robot()
+
+        robot.place(2,2, sim.Heading.SOUTH)
+
+        robot.move()
+        assert.equal(2, robot.x) // Unchanged
+        assert.equal(sim.Heading.SOUTH, robot.heading) // Also unchanged
+        assert.equal(3, robot.y) // Changed
+    })
+
     it('should not fall off the grid', function() {
         // PENDING - only after we've implemented move
     })

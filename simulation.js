@@ -21,13 +21,18 @@ function Robot() {
         self.heading = self.heading.left
     }
 
+    self.move = function () {
+        self.x = self.x + self.heading.dx
+        self.y = self.y + self.heading.dy
+    }
+
 }
 
 var Heading = {
-    NORTH: {},
-    EAST:  {},
-    SOUTH: {},
-    WEST:  {}
+    NORTH: { dx:  0, dy: -1},
+    EAST:  { dx:  1, dy:  0},
+    SOUTH: { dx:  0, dy:  1},
+    WEST:  { dx: -1, dy:  0}
 }
 
 // Turning right
