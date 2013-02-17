@@ -2,7 +2,7 @@ var sim = require("../simulation")
 var assert = require("assert")
 
 describe('Robot', function(){
-  describe('#place()', function(){
+  // describe('#place()', function(){
     
     it('should be possible to place the robot anywhere on the grid with a heading', function() {
         var robot = new sim.Robot()
@@ -13,5 +13,29 @@ describe('Robot', function(){
         assert.equal(robot.heading, sim.Heading.EAST)
     })
 
-  })
+    it('should turn clockwise through NORTH, EAST, SOUTH, WEST and back to NORTH', function() {
+        var robot = new sim.Robot()
+
+        robot.place(0, 0, sim.Heading.NORTH)
+        assert.equal(robot.heading, sim.Heading.NORTH)
+
+        robot.right()
+        assert.equal(robot.heading, sim.Heading.EAST)
+
+        robot.right()
+        assert.equal(robot.heading, sim.Heading.SOUTH)
+
+        robot.right()
+        assert.equal(robot.heading, sim.Heading.WEST)
+
+        robot.right()
+        assert.equal(robot.heading, sim.Heading.NORTH)
+
+    })
+
+    it('should not fall off the grid', function() {
+        // PENDING - only after we've implemented move
+    })
+
+  // })
 })
