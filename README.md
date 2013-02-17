@@ -9,7 +9,7 @@ The common variety robot coding test - but in nodejs!
 The Objective
 =============
 
-Build a robot simulator that is able to control a robot on a two dimensional 5x5 grid. The robot is issued commands in little snippets like the following:
+Build a robot simulator that is able to control a robot on a two dimensional grid. The robot is issued commands in little snippets like the following:
 
     PLACE 1,2,EAST
     MOVE
@@ -22,5 +22,6 @@ That asks the robot to start on the grid at position 1,2 heading east. Move two 
 
 The most important rule is that I make the rules! This is because I've been asked to write this coding test by a recruiter without being told any more than "do the robot coding test!"
 
-Cheers
+Cheers,
+
 -Tushar
