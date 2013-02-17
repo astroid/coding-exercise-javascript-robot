@@ -17,6 +17,10 @@ function Robot() {
         self.heading = self.heading.right
     }
 
+    self.left = function() {
+        self.heading = self.heading.left
+    }
+
 }
 
 var Heading = {
@@ -26,10 +30,17 @@ var Heading = {
     WEST:  {}
 }
 
+// Turning right
 Heading.NORTH.right = Heading.EAST
 Heading.EAST.right = Heading.SOUTH
 Heading.SOUTH.right = Heading.WEST
 Heading.WEST.right = Heading.NORTH
+
+// Turning left
+Heading.NORTH.left = Heading.WEST
+Heading.WEST.left = Heading.SOUTH
+Heading.SOUTH.left = Heading.EAST
+Heading.EAST.left = Heading.NORTH
 
 
 exports.Robot = Robot

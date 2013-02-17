@@ -33,6 +33,26 @@ describe('Robot', function(){
 
     })
 
+    it('should turn anti-clockwise through NORTH, WEST, SOUTH, EAST and back to NORTH', function() {
+        var robot = new sim.Robot()
+
+        robot.place(0, 0, sim.Heading.NORTH)
+        assert.equal(robot.heading, sim.Heading.NORTH)
+
+        robot.left()
+        assert.equal(robot.heading, sim.Heading.WEST)
+
+        robot.left()
+        assert.equal(robot.heading, sim.Heading.SOUTH)
+
+        robot.left()
+        assert.equal(robot.heading, sim.Heading.EAST)
+
+        robot.left()
+        assert.equal(robot.heading, sim.Heading.NORTH)
+
+    })
+
     it('should not fall off the grid', function() {
         // PENDING - only after we've implemented move
     })
