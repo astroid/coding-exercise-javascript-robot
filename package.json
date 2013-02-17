@@ -1,0 +1,23 @@
+{
+  "name": "robot-nodejs",
+  "version": "0.0.0",
+  "description": "The common variety robot coding test",
+  "main": "run.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pokle/robot-nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "robot",
+    "coding-test"
+  ],
+  "author": "Tushar Pokle",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "1.8.1"
+  }
+}
