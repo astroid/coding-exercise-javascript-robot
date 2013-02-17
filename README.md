@@ -21,8 +21,8 @@ The most important rule is that I make the rules! This is because I've been aske
 My solution
 ===========
 
-* simulation.js - contains the Robot class that simulates the robot
-* test/test.js - contains unit tests that ensure that the objectives are met. *Start here!*
+* [simulation.js](simulation.js) - contains the Robot class that simulates the robot
+* [test/test.js](test/test.js) - contains unit tests that ensure that the objectives are met. *Start here!*
 
 
 Cheers,

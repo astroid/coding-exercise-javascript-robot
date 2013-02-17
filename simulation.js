@@ -1,4 +1,3 @@
-// The players in the simulation
 
 var Heading = {
     NORTH: { name: 'North', dx:  0, dy: -1, right: 'EAST',  left: 'WEST'},

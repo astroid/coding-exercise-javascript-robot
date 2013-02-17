@@ -2,7 +2,6 @@ var sim = require("../simulation")
 var assert = require("assert")
 
 describe('Robot', function(){
-  // describe('#place()', function(){
     
     it('should be possible to place the robot anywhere on the grid with a heading', function() {
         var robot = new sim.Robot()
@@ -78,5 +77,4 @@ describe('Robot', function(){
 
     })
 
-  // })
 })
