@@ -1,10 +1,9 @@
-robot-nodejs
-============
+robot
+=====
 
 The common variety robot coding test - but in nodejs!
 
-[![Build Status](https://travis-ci.org/pokle/robot-nodejs.png)](https://travis-ci.org/pokle/robot-nodejs)
-
+[![Circle CI](https://circleci.com/gh/pokle/coding-exercise-javascript-robot.svg?style=svg)](https://circleci.com/gh/pokle/coding-exercise-javascript-robot)
 
 The objective
 =============
@@ -24,7 +23,5 @@ My solution
 * [simulation.js](simulation.js) - contains the Robot class that simulates the robot
 * [test/test.js](test/test.js) - contains unit tests that ensure that the objectives are met. *Start here!*
 
-
-Cheers,
-
--Tushar
+----
+[My other coding exercises](https://github.com/search?q=user%3Apokle+coding-exercise)
